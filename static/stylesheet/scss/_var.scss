@@ -1,0 +1,14 @@
+$breakpoints: (
+  "pc": "screen and (min-width: 768px)",
+  "xl": "screen and (min-width: 1200px)"
+) !default;
+
+@mixin mq($breakpoint: pc){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+
+/*COLOR*/
+
+$col-text: rgb(95, 95, 95);

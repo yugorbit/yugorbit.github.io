@@ -1,12 +1,25 @@
 .btn{
-    display: block;
+  display: block;
 
-    padding: 24px 64px;
+  margin: 0 auto;
+  padding: 18px 12px;
 
-    border-radius: 24px;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 5px;
+  box-shadow: 0 5px 2px #2222222D;
 }
 
-.btn--white{
-    color: black;
-    background-color: #FFFFFF;
+.btn-white{
+  color: black;
+  background-color: #FFFFFF;
+
+  @extend .btn;
+}
+.btn-blue{
+  color: #FFFFFF;
+  background-color: rgb(13, 161, 230);
+
+  @extend .btn;
 }

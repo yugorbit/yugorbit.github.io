@@ -1,0 +1,17 @@
+.grid{
+  display: grid;
+
+  width: 100%;
+
+  grid-auto-rows: 200px;
+  grid-template-columns: 1fr;
+  @include mq(pc){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &_item{
+    width: 100%;
+
+    background-color: red;
+  }
+}

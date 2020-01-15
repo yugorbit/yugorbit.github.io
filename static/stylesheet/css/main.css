@@ -1,3 +1,4 @@
+/*COLOR*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,24 +58,163 @@ table {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.wapper {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #e77c57;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e77c57), to(#0099ff));
+  background: -webkit-linear-gradient(bottom, #e77c57 0%, #0099ff 100%);
+  background: -o-linear-gradient(bottom, #e77c57 0%, #0099ff 100%);
+  background: linear-gradient(0deg, #e77c57 0%, #0099ff 100%); }
+
+.profile {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: transparent;
+  background-image: url("/static/img/1V6A8088.jpg");
+  background-repeat: no-repeat;
+  background-position: 70% center;
+  background-clip: content-box;
+  background-size: cover; }
+  .profile_me {
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 150px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(143, 143, 143, 0.75); }
+  .profile_bgimg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+
 .header {
   width: 100vw;
-  height: 256px; }
+  height: 256px;
+  padding: 64px; }
   .header_title {
-    font-size: 3rem;
-    display: block;
-    margin: 64px auto; }
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 16px 0;
+    text-align: center;
+    color: #FFFFFF; }
+    @media screen and (min-width: 768px) {
+      .header_title {
+        font-size: 2.4rem; } }
+  .header_subtitle {
+    font-family: "Sawarabi Gothic";
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFFAF; }
+    @media screen and (min-width: 768px) {
+      .header_subtitle {
+        font-size: 1.2rem; } }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  color: #dadada; }
+  .menu_item {
+    line-height: 48px;
+    padding: 0 16px;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background-color: #FFFFFF; }
+    @media screen and (min-width: 768px) {
+      .menu_item {
+        padding: 0 32px; } }
+    .menu_item a {
+      font-size: 0.8em;
+      text-decoration: none;
+      color: #5f5f5f; }
+    .menu_item:hover {
+      background-color: #F0F0F0; }
 
 .contents {
-  width: 92%;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
   margin: 0 auto;
-  border-radius: 5px; }
+  border-radius: 10px 10px 0 0;
+  background-color: white; }
 
-.btn {
+.footer {
+  width: 100vw;
+  height: 128px;
+  background-color: #FFFFFF; }
+
+.plain {
+  width: 100%;
+  margin: 48px 0;
+  padding: 0 8px;
+  color: #5f5f5f; }
+  @media screen and (min-width: 768px) {
+    .plain {
+      padding: 16px 0; } }
+  .plain_title {
+    font-size: 1.6em;
+    padding: 32px 0;
+    text-align: center; }
+  .plain_text {
+    font-size: 1.2em;
+    padding: 16px 0; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-auto-rows: 200px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr; }
+  @media screen and (min-width: 768px) {
+    .grid {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; } }
+  .grid_item {
+    width: 100%;
+    background-color: red; }
+
+.btn, .btn-white, .btn-blue {
   display: block;
-  padding: 24px 64px;
-  border-radius: 24px; }
+  margin: 0 auto;
+  padding: 18px 12px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 2px #2222222D;
+  box-shadow: 0 5px 2px #2222222D; }
 
-.btn--white {
+.btn-white {
   color: black;
   background-color: #FFFFFF; }
+
+.btn-blue {
+  color: #FFFFFF;
+  background-color: #0da1e6; }

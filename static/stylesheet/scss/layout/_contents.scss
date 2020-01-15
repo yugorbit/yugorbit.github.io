@@ -1,6 +1,14 @@
 .contents{
-    width: 92%;
-    margin: 0 auto;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 16px;
 
-    border-radius: 5px;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  border-radius: 10px 10px 0 0;
+  background-color: white;
 }
