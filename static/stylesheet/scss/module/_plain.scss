@@ -1,24 +1,29 @@
 .plain{
   width: 100%;
-  margin: 48px 0;
+  margin: 16px 0;
   padding: 0 8px;
 
   color: $col-text;
 
   @include mq(){
-    padding: 16px 0;
   }
 
   &_title{
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6em;
 
-    padding: 32px 0;
+    padding: 16px 0;
 
     text-align: center;
   }
   &_text{
-    font-size: 1.2em;
+    font-size: 1.0em;
+    line-height: 1.5em;
 
     padding: 16px 0;
+
+    @include mq(pc){
+      padding: 0 64px;
+    }
   }
 }

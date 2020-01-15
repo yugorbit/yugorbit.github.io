@@ -1,25 +1,33 @@
 .btn{
   display: block;
 
-  margin: 0 auto;
-  padding: 18px 12px;
+  width: 256px;
+  max-width: 512px;
+  margin: 16px auto;
+  padding: 12px 0;
 
   text-align: center;
   text-decoration: none;
 
   border-radius: 5px;
-  box-shadow: 0 5px 2px #2222222D;
 }
 
 .btn-white{
-  color: black;
-  background-color: #FFFFFF;
+  color: $col-text;
+  border: 1px solid $col-text;
+  background-color: $col-white;
+
+  @extend .btn;
+}
+.btn-black{
+  color: $col-white;
+  background-color: $col-black;
 
   @extend .btn;
 }
 .btn-blue{
-  color: #FFFFFF;
-  background-color: rgb(13, 161, 230);
+  color: $col-white;
+  background-color: $col-blue;
 
   @extend .btn;
 }

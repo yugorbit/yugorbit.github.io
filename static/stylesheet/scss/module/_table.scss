@@ -1,0 +1,30 @@
+.table{
+  width: 100%;
+  max-width: 600px;
+
+  text-align: center;
+  .row{
+    display: flex;
+
+    width: 100%;
+    padding: 8px 16px;
+
+    border-bottom: 1px solid $col-lightblack;
+    &_head{
+      display: inline-block;
+
+      width: 30%;
+      margin: 0 8px;
+
+      text-align: center;
+    }
+    &_data{
+      display: inline-block;
+
+      width: 70%;
+      margin: 0 8px;
+
+      text-align: left;
+    }
+  }
+}

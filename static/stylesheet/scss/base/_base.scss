@@ -1,5 +1,5 @@
 .wapper{
-  font-size: 16px;
+  font-size: 12px;
 
   position: absolute;
   top: 0;
@@ -7,6 +7,10 @@
 
   width: 100vw;
 
-  background: rgb(231,124,87);
-  background: linear-gradient(0deg, rgba(231,124,87,1) 0%, rgba(0,153,255,1) 100%);
+  background: #E77C57;
+  background: linear-gradient(0deg, #E77C57 0%, #0099FF 100%);
+
+  @include mq(pc){
+    font-size: 16px;
+  }
 }
