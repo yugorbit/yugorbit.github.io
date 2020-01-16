@@ -322,18 +322,19 @@ table {
       text-align: left; }
 
 .img, .img-circle {
-  position: absolute;
-  top: 50%;
   display: block;
-  margin: 0 auto;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .img, .img-circle {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 
 .img-circle {
   width: 200px;
   height: 200px;
-  color: #5F5F5F;
   border-radius: 50%;
   background-color: #272727; }
 
