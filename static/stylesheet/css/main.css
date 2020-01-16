@@ -107,14 +107,14 @@ table {
   width: 100%;
   height: 48px;
   text-align: center;
-  color: #dadada; }
+  color: #5F5F5F;
+  background-color: #F3F3F3; }
   .menu_item {
     line-height: 48px;
     padding: 0 16px;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    background-color: #FFFFFF; }
+    transition: background-color 0.3s; }
     @media screen and (min-width: 768px) {
       .menu_item {
         padding: 0 32px; } }
@@ -173,23 +173,51 @@ table {
     height: 100%;
     background-color: white; }
 
-.plain {
+.plain, .plain-minimum {
+  position: relative;
   width: 100%;
-  margin: 16px 0;
-  padding: 0 8px;
+  margin: 48px auto;
+  padding: 0 16px;
   color: #5F5F5F; }
+  @media screen and (min-width: 768px) {
+    .plain, .plain-minimum {
+      max-width: 800px;
+      margin: 88px auto;
+      padding: 0 8px; } }
   .plain_title {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6em;
-    padding: 16px 0;
+    font-size: 2.0em;
+    position: relative;
+    max-width: 100%;
+    margin: 32px 0;
+    padding: 9px 0;
     text-align: center; }
+    .plain_title::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      content: "";
+      background: -webkit-gradient(linear, left top, right top, from(#E77C57), to(#0099FF));
+      background: -webkit-linear-gradient(left, #E77C57 0%, #0099FF 100%);
+      background: -o-linear-gradient(left, #E77C57 0%, #0099FF 100%);
+      background: linear-gradient(90deg, #E77C57 0%, #0099FF 100%); }
+  .plain_caption {
+    font-size: 1.6em; }
   .plain_text {
     font-size: 1.0em;
     line-height: 1.5em;
-    padding: 16px 0; }
-    @media screen and (min-width: 768px) {
-      .plain_text {
-        padding: 0 64px; } }
+    display: block;
+    max-width: 600px;
+    margin: 0 auto; }
+
+.plain-minimum {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .plain-minimum {
+      width: 40%; } }
 
 .grid {
   display: -ms-grid;
@@ -230,12 +258,50 @@ table {
   background-color: #0099FF; }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
-  height: 64px; }
+  max-width: 256px;
+  margin: 16px auto; }
+  @media screen and (min-width: 768px) {
+    .links {
+      width: 312px;
+      margin: 16px 0; } }
+  .links_item, .links_item-twitter, .links_item-facebook, .links_item-github {
+    font-size: 1.8em;
+    line-height: 64px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 16px auto;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    text-align: center;
+    border: 1px solid #C5C5C5;
+    border-radius: 50%;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .links_item:hover, .links_item-twitter:hover, .links_item-facebook:hover, .links_item-github:hover {
+      -webkit-box-shadow: 0 4px 2px #C5C5C5;
+      box-shadow: 0 4px 2px #C5C5C5; }
+  .links_item-twitter {
+    color: #1DA1F2; }
+  .links_item-facebook {
+    color: #3C5A99; }
+  .links_item-github {
+    color: #333333; }
 
 .table {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
   text-align: center; }
   .table .row {
     display: -webkit-box;
@@ -256,14 +322,39 @@ table {
       text-align: left; }
 
 .img, .img-circle {
+  position: absolute;
+  top: 50%;
   display: block;
-  width: 160px;
-  height: 160px;
-  margin: 16px auto; }
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .img-circle {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   color: #5F5F5F;
   border-radius: 50%;
   background-color: #272727; }
+
+.split {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .split {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.align-left {
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  text-align: left; }
+
+.align-right {
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  text-align: right; }

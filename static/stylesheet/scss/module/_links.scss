@@ -1,4 +1,49 @@
 .links{
+  display: flex;
+  justify-content: center;
+
   width: 100%;
-  height: 64px;
+  max-width: 256px;
+  margin: 16px auto;
+
+  @include mq(pc){
+    width: 312px;
+    margin: 16px 0;
+  }
+
+  &_item{
+    font-size: 1.8em;
+    line-height: 64px;
+
+    display: block;
+
+    width: 64px;
+    height: 64px;
+    margin: 16px auto;
+
+    transition: box-shadow 0.3s;
+    text-align: center;
+
+    border: 1px solid $col-lightblack;
+    border-radius: 50%;
+    box-shadow: none;
+    &:hover{
+      box-shadow: 0 4px 2px $col-lightblack;
+    }
+  }
+  &_item-twitter{
+    color: #1DA1F2;
+
+    @extend .links_item;
+  }
+  &_item-facebook{
+    color: #3C5A99;
+
+    @extend .links_item;
+  }
+  &_item-github{
+    color: #333333;
+
+    @extend .links_item;
+  }
 }

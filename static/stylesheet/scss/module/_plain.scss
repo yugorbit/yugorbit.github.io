@@ -1,29 +1,63 @@
 .plain{
+  position: relative;
+
   width: 100%;
-  margin: 16px 0;
-  padding: 0 8px;
+  margin: 48px auto;
+  padding: 0 16px;
 
   color: $col-text;
 
-  @include mq(){
+  @include mq(pc){
+    max-width: 800px;
+    margin: 88px auto;
+    padding: 0 8px;
   }
 
   &_title{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6em;
+    font-size: 2.0em;
 
-    padding: 16px 0;
+    position: relative;
+
+    max-width: 100%;
+    margin: 32px 0;
+    padding: 9px 0;
 
     text-align: center;
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: inline-block;
+
+      width: 100%;
+      height: 2px;
+
+      content: "";
+
+      background: linear-gradient(90deg, #E77C57 0%, #0099FF 100%);
+    }
+  }
+  &_caption{
+    font-size: 1.6em;
   }
   &_text{
     font-size: 1.0em;
     line-height: 1.5em;
 
-    padding: 16px 0;
+    display: block;
 
-    @include mq(pc){
-      padding: 0 64px;
-    }
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.plain-minimum{
+  width: 100%;
+
+  @extend .plain;
+  @include mq(pc){
+    width: 40%;
   }
 }

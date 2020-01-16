@@ -1,14 +1,17 @@
 .img{
+  position: absolute;
+  top: 50%;
+
   display: block;
 
-  width: 160px;
-  height: 160px;
-  margin: 16px auto;
+  margin: 0 auto;
+
+  transform: translateY(-50%);
 }
 
 .img-circle{
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
 
   color: $col-text;
   border-radius: 50%;
