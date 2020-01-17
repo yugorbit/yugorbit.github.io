@@ -13,7 +13,7 @@
   &_item{
     line-height: 48px;
 
-    padding: 0 16px;
+    padding: 0 24px;
 
     transition: background-color 0.3s;
 
@@ -24,6 +24,7 @@
       font-size: 1.0em;
 
       text-decoration: none;
+      letter-spacing: 0.05em;
 
       color: $col-text;
     }

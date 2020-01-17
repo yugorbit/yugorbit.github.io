@@ -1,8 +1,8 @@
 .btn{
   display: block;
 
-  width: 256px;
-  max-width: 512px;
+  width: 100%;
+  max-width: 300px;
   margin: 16px auto;
   padding: 12px 0;
 
@@ -28,6 +28,12 @@
 .btn-blue{
   color: $col-white;
   background-color: $col-blue;
+
+  @extend .btn;
+}
+.btn-orange{
+  color: $col-black;
+  background-color: $col-orange;
 
   @extend .btn;
 }
