@@ -1,6 +1,82 @@
 .footer{
-  width: 100vw;
-  height: 128px;
+  display: flex;
+  overflow: hidden;
 
-  background-color: #FFFFFF;
+  width: 96%;
+  max-width: 800px;
+  height: 312px;
+  margin: 16px auto;
+  padding: 16px 16px;
+  .contact{
+    width: 50%;
+    height: 100%;
+
+    color: #FFFFFF;
+    &_head{
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+
+      margin: 16px 0;
+    }
+    &_link{
+      position: relative;
+
+      display: inline-block;
+
+      height: 48px;
+
+      text-decoration: none;
+
+      color: #FFFFFF;
+      &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: inline-block;
+
+        width: 100%;
+        height: 1px;
+
+        content: "";
+
+        background-color: #FFFFFFB0;
+      }
+      i{
+        font-size: 1.2rem;
+
+        width: 32px;
+
+        text-align: center;
+      }
+    }
+  }
+
+  .ftlink{
+    width: 100%;
+    height: 100%;
+
+    list-style-type: none;
+    &_item{
+      font-family: "Sawarabi Gothic", sans-serif;
+      font-size: 1.0rem;
+      line-height: 48px;
+
+      height: 48px;
+      margin: 12px 0;
+      padding-left: 8px;
+    }
+  }
+
+  .credit{
+    width: 50%;
+
+    color: #FFFFFF;
+    &_head{
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+
+      margin: 16px 0;
+    }
+  }
 }

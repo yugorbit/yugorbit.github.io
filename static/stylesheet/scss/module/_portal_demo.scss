@@ -1,0 +1,15 @@
+.portal_demo{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -100vw;
+
+  width: 100vw;
+  height: 100vh;
+
+  transition: all 1s;
+}
+
+.active{
+  left: 0;
+}

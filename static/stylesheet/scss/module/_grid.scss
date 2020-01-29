@@ -3,7 +3,6 @@
 
   width: 100%;
 
-  grid-auto-rows: 320px;
   grid-gap: 12px;
   grid-template-columns: 1fr;
   @include mq(pc){

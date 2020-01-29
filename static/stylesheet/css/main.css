@@ -73,13 +73,19 @@ table {
     .wapper {
       font-size: 16px; } }
 
+p {
+  letter-spacing: 0.05em; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.1em; }
+
 .header {
   width: 100vw;
   height: 256px;
-  padding: 64px; }
+  padding: 72px; }
   .header_title {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.2em;
     font-weight: bold;
     margin: 16px 0;
     text-align: center;
@@ -88,16 +94,11 @@ table {
     @media screen and (min-width: 768px) {
       .header_title {
         font-size: 2.4rem; } }
-  .header_subtitle {
-    font-family: "Sawarabi Gothic";
-    font-size: 1rem;
-    text-align: center;
-    color: #FFFFFFAF; }
-    @media screen and (min-width: 768px) {
-      .header_subtitle {
-        font-size: 1.2rem; } }
 
 .menu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,32 +127,96 @@ table {
     .menu_item:hover {
       background-color: #F0F0F0; }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 96%;
+  max-width: 1000px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 10px; }
+
 .contents {
   font-family: "Sawarabi Gothic", sans-serif;
+  position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 96%;
   max-width: 1000px;
   min-height: 100vh;
   margin: 0 auto;
-  border-radius: 10px 10px 0 0;
+  padding-top: 48px;
+  border-radius: 12px;
   background-color: white; }
 
 .footer {
-  width: 100vw;
-  height: 128px;
-  background-color: #FFFFFF; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 96%;
+  max-width: 800px;
+  height: 312px;
+  margin: 16px auto;
+  padding: 16px 16px; }
+  .footer .contact {
+    width: 50%;
+    height: 100%;
+    color: #FFFFFF; }
+    .footer .contact_head {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      margin: 16px 0; }
+    .footer .contact_link {
+      position: relative;
+      display: inline-block;
+      height: 48px;
+      text-decoration: none;
+      color: #FFFFFF; }
+      .footer .contact_link::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background-color: #FFFFFFB0; }
+      .footer .contact_link i {
+        font-size: 1.2rem;
+        width: 32px;
+        text-align: center; }
+  .footer .ftlink {
+    width: 100%;
+    height: 100%;
+    list-style-type: none; }
+    .footer .ftlink_item {
+      font-family: "Sawarabi Gothic", sans-serif;
+      font-size: 1.0rem;
+      line-height: 48px;
+      height: 48px;
+      margin: 12px 0;
+      padding-left: 8px; }
+  .footer .credit {
+    width: 50%;
+    color: #FFFFFF; }
+    .footer .credit_head {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      margin: 16px 0; }
 
 .plain, .plain-minimum {
   position: relative;
   width: 100%;
-  margin: 48px auto;
+  margin: 32px auto;
   padding: 0 16px;
   color: #5F5F5F; }
   @media screen and (min-width: 768px) {
     .plain, .plain-minimum {
       max-width: 800px;
-      margin: 88px auto;
-      padding: 0 8px; } }
+      margin: 64px auto;
+      padding: 0 16px; } }
   .plain_title {
     font-family: "Montserrat", sans-serif;
     font-size: 2.0em;
@@ -174,10 +239,10 @@ table {
       background: -o-linear-gradient(left, #E77C57 0%, #0099FF 100%);
       background: linear-gradient(90deg, #E77C57 0%, #0099FF 100%); }
   .plain_caption {
-    font-size: 1.6em; }
+    font-size: 1.8em; }
   .plain_text {
     font-size: 1.0em;
-    line-height: 1.5em;
+    line-height: 1.8em;
     display: block;
     max-width: 600px;
     margin: 0 auto; }
@@ -186,13 +251,12 @@ table {
   width: 100%; }
   @media screen and (min-width: 768px) {
     .plain-minimum {
-      width: 60%; } }
+      width: auto; } }
 
 .grid {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  grid-auto-rows: 320px;
   grid-gap: 12px;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr; }
@@ -303,14 +367,9 @@ table {
 
 .img, .img-circle {
   display: block;
-  margin: 0 auto; }
-  @media screen and (min-width: 768px) {
-    .img, .img-circle {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); } }
+  width: 80%;
+  height: auto;
+  margin: 24px auto; }
 
 .img-circle {
   width: 160px;
@@ -319,8 +378,13 @@ table {
   background-color: #272727; }
   @media screen and (min-width: 768px) {
     .img-circle {
+      position: relative;
+      top: 50%;
       width: 200px;
-      height: 200px; } }
+      height: 200px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 
 .split {
   width: 100%;
@@ -346,35 +410,74 @@ table {
 
 .picard {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
   width: 100%;
-  height: 100px; }
-  @media screen and (min-width: 768px) {
-    .picard {
-      height: 200px; } }
+  height: 440px;
+  margin: 16px 0;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
   .picard_img {
-    width: 30%;
-    height: auto; }
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%; }
   .picard .description {
     position: relative;
+    bottom: 0;
     overflow: hidden;
     width: 100%;
-    padding: 0 16px; }
+    padding: 8px 16px; }
     .picard .description_title {
-      font-size: 1.4em; }
+      font-size: 1.4em;
+      line-height: 2em;
+      position: relative;
+      padding: 16px 0;
+      text-align: center; }
+      .picard .description_title::after {
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        content: "";
+        background: -webkit-gradient(linear, left top, right top, from(#b9e5ff), to(#0099FF));
+        background: -webkit-linear-gradient(left, #b9e5ff 0%, #0099FF 100%);
+        background: -o-linear-gradient(left, #b9e5ff 0%, #0099FF 100%);
+        background: linear-gradient(90deg, #b9e5ff 0%, #0099FF 100%); }
     .picard .description_text {
       line-height: 1.5em;
+      position: relative;
       display: inline-block;
       overflow: hidden;
       width: 100%;
-      padding: 16px 0;
+      height: 100px;
       letter-spacing: 0.02em; }
   .picard_link {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.portal_demo {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+.active {
+  left: 0; }

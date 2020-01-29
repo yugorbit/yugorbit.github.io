@@ -1,11 +1,11 @@
 .header{
   width: 100vw;
   height: 256px;
-  padding: 64px;
+  padding: 72px;
 
   &_title{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.2em;
     font-weight: bold;
 
     margin: 16px 0;
@@ -14,21 +14,9 @@
     letter-spacing: 0.1em;
 
     color: #FFFFFF;
+
 @include mq(pc){
       font-size: 2.4rem;
-    }
-  }
-
-  &_subtitle{
-    font-family: "Sawarabi Gothic";
-    font-size: 1rem;
-
-    text-align: center;
-
-    color: #FFFFFFAF;
-
-@include mq(pc){
-      font-size: 1.2rem;
     }
   }
 }

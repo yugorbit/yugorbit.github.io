@@ -1,4 +1,8 @@
 .menu{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+
   display: flex;
   justify-content: center;
 
@@ -9,6 +13,7 @@
 
   color: $col-text;
   background-color: #F3F3F3;
+
 
   &_item{
     line-height: 48px;
@@ -32,4 +37,16 @@
       background-color: #F0F0F0;
     }
   }
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 50%;
+
+  width: 96%;
+  max-width: 1000px;
+
+  transform: translateX(-50%);
+
+  border-radius: 10px;
 }

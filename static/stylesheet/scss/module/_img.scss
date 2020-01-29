@@ -1,13 +1,11 @@
 .img{
   display: block;
 
-  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  margin: 24px auto;
 
   @include mq(pc){
-    position: relative;
-    top: 50%;
-
-    transform: translateY(-50%);
   }
 }
 
@@ -20,7 +18,12 @@
 
   @extend .img;
   @include mq(pc){
+    position: relative;
+    top: 50%;
+
     width: 200px;
     height: 200px;
+
+    transform: translateY(-50%);
   }
 }
