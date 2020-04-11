@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article {
+  width: 100%;
+  margin-bottom: 40px;
+}
+article section {
+  width: 750px;
+  margin: 0px auto 20px auto;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-family: "object-fit: cover";
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: calc(30px * 0.8);
+  letter-spacing: calc(30px / 4);
+  line-height: calc(30px * 2.5);
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 23px;
+  letter-spacing: calc(23px / 4);
+  line-height: calc(23px * 2.5);
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 19px;
+  letter-spacing: calc(19px / 4);
+  line-height: calc(19px * 2.5);
+  color: #FFFFFF;
+}
+
+h4, h5, h6 {
+  font-size: 15px;
+  letter-spacing: calc(15px / 4);
+  line-height: calc(15px * 2.5);
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: calc(15px / 4);
+  line-height: calc(15px * 2.5);
+  color: #FFFFFF;
+}
+
+a {
+  font-size: 15px;
+  letter-spacing: calc(15px / 4);
+  line-height: calc(15px * 2.5);
+  color: #FFFFFF;
+}
+
+.fab, .fas {
+  font-size: 30px;
+}
+
+.navigate {
+  width: 250px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.navigate ul {
+  width: 100%;
+  height: 500px;
+  padding: 64px 0;
+}
+.navigate ul li {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 16px;
+}
+.navigate ul li a {
+  vertical-align: middle;
+  font-size: 19px;
+  color: #27476E;
+  line-height: 64px;
+  text-decoration: none;
+}
+
+.credit {
+  width: calc(100% - 250px);
+  padding: 64px 0px;
+}
+.credit ul {
+  width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+}
+.credit ul li {
+  text-align: center;
+  width: 20%;
+  height: 48px;
+}
+.credit ul li a {
+  display: block;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.main {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0077b7), to(#27476E));
+  background-image: -o-linear-gradient(top, #0077b7, #27476E);
+  background-image: linear-gradient(180deg, #0077b7, #27476E);
+  z-index: 0;
+}
+
+.visual {
+  padding: 200px 0;
+}
+
+.bcol_white {
+  background-color: #FFFFFF;
+}
+
+.bcol_theme {
+  background-color: #0077b7;
+}
+
+.bcol_red {
+  background-color: #EE4266;
+}
+
+.bcol_navy {
+  background-color: #27476E;
+}
+
+.col_black {
+  color: #464646;
+}
+
+.col_white {
+  color: #FFFFFF;
+}
+
+.col_red {
+  color: #EE4266;
+}

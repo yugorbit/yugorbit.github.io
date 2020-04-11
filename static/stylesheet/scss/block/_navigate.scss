@@ -1,0 +1,28 @@
+.navigate{
+    width: $size_nav;
+    height: 100vh;
+    background-color: $col_white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    ul{
+        width: 100%;
+        height: 500px;
+        padding: 64px 0;
+        li{
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            height: 64px;
+            margin-bottom: 16px;
+            a{
+                vertical-align: middle;
+                font-size: $fs_l;
+                color: $col_navy;
+                line-height: 64px;
+                text-decoration: none;
+            }
+        }
+    }
+}

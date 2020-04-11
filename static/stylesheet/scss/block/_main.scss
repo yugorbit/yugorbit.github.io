@@ -1,0 +1,6 @@
+.main{
+    width: calc(100% - #{$size_nav});
+    min-height: 100vh;
+    background-image: $gra_theme;
+    z-index: 0;
+}
