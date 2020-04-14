@@ -1,3 +1,7 @@
 .visual{
+    width: 100%;
     padding: 200px 0;
+    @include mq() {
+        padding: 180px 20px;
+    }
 }

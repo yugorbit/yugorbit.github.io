@@ -1,8 +1,5 @@
 $breakpoints: (
-  'sm': 'screen and (min-width: 400px)',
-  'md': 'screen and (min-width: 768px)',
-  'lg': 'screen and (min-width: 1000px)',
-  'xl': 'screen and (min-width: 1200px)',
+  'md': 'screen and (max-width: 768px)',
 ) !default;
 @mixin mq($breakpoint: md) {
     @media #{map-get($breakpoints, $breakpoint)} {
@@ -23,10 +20,10 @@ $col_black: rgb(70, 70, 70);
 
 $gra_theme: linear-gradient(180deg, $col_theme, $col_navy);
 
-$fs_s: 12px;
+$fs_s: 13px;
 $fs_m: 15px;
 $fs_l: 19px;
 $fs_xl: 23px;
 $fs_xxl: 30px;
 
-$size_nav: 250px;
+$size_nav: 275px;

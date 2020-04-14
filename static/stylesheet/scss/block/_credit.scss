@@ -1,15 +1,26 @@
 .credit{
     width: calc(100% - #{($size_nav)});
     padding: 64px 0px;
+    @include mq() {
+        width: 100%;
+    }
 
     ul{
         width: 750px;
         display: flex;
         margin: 0px auto;
+        @include mq() {
+            width: 100%;
+            flex-wrap: wrap;
+        }
         li{
             text-align: center;
-            width: 20%;
+            width: 25%;
             height: 48px;
+            @include mq() {
+                width: 50%;
+                height: 72px;
+            }
             a{
                 display: block;
                 line-height: 48px;

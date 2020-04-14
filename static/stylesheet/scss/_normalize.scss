@@ -1,13 +1,21 @@
 article{
     width: 100%;
-    margin-bottom: 40px;
+    padding: 40px 0;
+    @include mq() {
+        padding: 42px 20px;
+    }
     section{
         width: 750px;
         margin: 0px auto 20px auto;
+        @include mq() {
+            width: 100%;
+        }
     }
 }
 
 img {
+    width: 100%;
+    padding: 8px;
     object-fit: cover;
     font-family: "object-fit: cover";
 }
@@ -32,9 +40,9 @@ h3 {
     color: $col_white;
 }
 h4, h5, h6 {
-    font-size: $fs_m;
-    letter-spacing: calc(#{$fs_m} / 4);
-    line-height: calc(#{$fs_m} * 2.5);
+    font-size: $fs_l;
+    letter-spacing: calc(#{$fs_l} / 4);
+    line-height: calc(#{$fs_l} * 2.5);
     color: $col_white;
 }
 
@@ -50,6 +58,7 @@ a {
     letter-spacing: calc(#{$fs_m} / 4);
     line-height: calc(#{$fs_m} * 2.5);
     color: $col_white;
+    padding: 16px;
 }
 
 .fab, .fas{

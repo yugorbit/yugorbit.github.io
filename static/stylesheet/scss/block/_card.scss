@@ -1,0 +1,25 @@
+.card{
+    width: 100%;
+    display: inline-flex;
+    @include mq() {
+        flex-wrap: wrap;
+    }
+    & > img{
+        width: 250px;
+        height: 200px;
+        padding: 12px;
+        @include mq() {
+            width: 100%;
+        }
+    }
+    &_inner {
+        width: 65%;
+        padding: 12px;
+        @include mq() {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+        }
+    }
+}

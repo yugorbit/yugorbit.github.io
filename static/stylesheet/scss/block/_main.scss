@@ -3,4 +3,7 @@
     min-height: 100vh;
     background-image: $gra_theme;
     z-index: 0;
+    @include mq(){
+        width: 100vw;
+    }
 }
