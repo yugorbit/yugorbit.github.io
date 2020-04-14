@@ -6,7 +6,7 @@ article{
     }
     section{
         width: 750px;
-        margin: 0px auto 20px auto;
+        margin: 0px auto 40px auto;
         @include mq() {
             width: 100%;
         }

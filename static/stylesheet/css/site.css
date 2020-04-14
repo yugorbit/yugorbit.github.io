@@ -64,7 +64,7 @@ article {
 }
 article section {
   width: 750px;
-  margin: 0px auto 20px auto;
+  margin: 0px auto 40px auto;
 }
 @media screen and (max-width: 768px) {
   article section {
@@ -165,10 +165,12 @@ a {
   display: inline-block;
   height: 64px;
   margin-bottom: 16px;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .navigate ul li {
     margin-bottom: 0px;
+    width: auto;
   }
 }
 .navigate ul li a {
