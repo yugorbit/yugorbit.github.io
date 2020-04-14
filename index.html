@@ -11,8 +11,8 @@
     <header class="navigate">
         <nav>
             <ul>
-                <li><a href="">PROFILE</a></li>
-                <li><a href="">PROJECT</a></li>
+                <li><a class="scroll" href="#profile">PROFILE</a></li>
+                <li><a class="scroll" href="#project">PROJECT</a></li>
             </ul>
         </nav>
     </header>
@@ -25,14 +25,14 @@
         </article>
 
         <article>
-            <section>
+            <section id="profile">
                 <h2>PROFILE</h2>
                 <p>
                     福岡県北九州市に在住しています、フロント・バックエンドエンジニアを目指している学生です。<br>
                     PHP,Javascriptが得意です。
                 </p>
             </section>
-            <section>
+            <section id="project">
                 <h2>PROJECT</h2>
                 <p class="mb_30">これまでに関わってきたプロジェクト</p>
                 <div class="card">
@@ -68,6 +68,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/333825c719.js" crossorigin="anonymous"></script>
     <script src="/static/javascript/main.js"></script>
 </body>
